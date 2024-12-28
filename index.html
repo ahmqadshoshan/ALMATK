@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حاسب المعدل الدراسي</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>حاسب المعدل الدراسي</h1>
+
+        <label for="num-subjects">عدد المواد:</label>
+        <input type="number" id="num-subjects" min="1" onchange="createTable()" />
+
+        <div id="grades-container"></div>
+
+        <button onclick="calculateGrade()">حساب المعدل</button>
+
+        <h2 id="result"></h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
